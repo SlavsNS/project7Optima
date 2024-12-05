@@ -8,8 +8,5 @@ class Document:
     def render(self):
         if not self.elements:
             return "Document is empty."
-<<<<<<< HEAD
         return "\n".join(element.render() for element in self.elements)
-=======
         return '\n'.join(element.render() for element in self.elements)
->>>>>>> cd50c83 (Initial commit)

@@ -35,9 +35,11 @@ def test_character_attributes():
     assert str(character) == "Character(name=Hero, attributes={strength: 10})"
 
 # Test for CharacterManager class
-def test_character_manager():
+def test_character_creation_and_attribute_assignment():
     manager = CharacterManager()
-    manager.create_character("Hero")
+    hero = manager.create_character("Hero")
     manager.add_attribute("Hero", "strength", "10")
+
     assert "Hero" in manager.characters
     assert manager.characters["Hero"].attributes["strength"] == "10"
+
