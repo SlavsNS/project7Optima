@@ -22,5 +22,24 @@ class List(TextElement):
         self.items = items
 
     def render(self):
+<<<<<<< HEAD
         list_items = "".join(f"<li>{item}</li>" for item in self.items)
         return f"<ul>{list_items}</ul>"
+=======
+        list_items = ''.join(f"<li>{item}</li>" for item in self.items)
+        return f"<ul>{list_items}</ul>"
+
+class CharacterTextRenderer:
+    """Рендеринг текстового представлення персонажів."""
+
+    @staticmethod
+    def render_character(character):
+        """Повернути текстове представлення персонажа."""
+        text = f"Name: {character.name}\n"
+        text += f"Description: {character.description}\n"
+        text += f"Rarity: {character.rarity}\n"
+        text += "Attributes:\n"
+        for key, value in character.attributes.items():
+            text += f"  - {key}: {value}\n"
+        return text
+>>>>>>> cd50c83 (Initial commit)
