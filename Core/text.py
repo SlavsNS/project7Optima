@@ -22,10 +22,6 @@ class List(TextElement):
         self.items = items
 
     def render(self):
-<<<<<<< HEAD
-        list_items = "".join(f"<li>{item}</li>" for item in self.items)
-        return f"<ul>{list_items}</ul>"
-=======
         list_items = ''.join(f"<li>{item}</li>" for item in self.items)
         return f"<ul>{list_items}</ul>"
 
@@ -42,4 +38,3 @@ class CharacterTextRenderer:
         for key, value in character.attributes.items():
             text += f"  - {key}: {value}\n"
         return text
->>>>>>> cd50c83 (Initial commit)

@@ -5,11 +5,8 @@ from Core.display import Display
 def main():
     document = Document()
     interface = CommandInterface(document)
-<<<<<<< HEAD
-=======
     interface.fetch_characters()
     interface.show_weapons()
->>>>>>> cd50c83 (Initial commit)
 
     while True:
         mode = Display.input("Choose mode (text/chars/exit): ").lower()
@@ -31,7 +28,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-<<<<<<< HEAD
-=======
 
->>>>>>> cd50c83 (Initial commit)
